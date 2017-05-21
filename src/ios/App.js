@@ -6,14 +6,12 @@ import {
   View
 } from 'react-native';
 
+import Navigator from '../navigation/navigator';
+
 export default class hrms extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.instructions}>
-          HRMS APP
-        </Text>
-      </View>
+      <Navigator />
     );
   }
 }

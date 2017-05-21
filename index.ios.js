@@ -2,7 +2,11 @@ import React from 'react';
 import {
   AppRegistry
 } from 'react-native';
+import { Provider } from 'react-redux';
+import store from './src/store';
 
-import App from './src/ios/App';
+import HRMSApp from './src';
 
-AppRegistry.registerComponent('hrms', () => App);
+console.ignoredYellowBox = ['Warning: View.propTypes'];
+
+AppRegistry.registerComponent('hrms', () => HRMSApp);

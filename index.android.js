@@ -2,7 +2,9 @@ import React from 'react';
 import {
   AppRegistry
 } from 'react-native';
+import { Provider } from 'react-redux';
+import store from './src/store';
 
-import App from './src/android/App';
+import HRMSApp from './src';
 
-AppRegistry.registerComponent('hrms', () => App);
+AppRegistry.registerComponent('hrms', () => HRMSApp);
