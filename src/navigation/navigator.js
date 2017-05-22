@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { addNavigationHelpers } from 'react-navigation';
-import { Navigator } from './';
+import { RootNavigator } from './';
 
 class AppNav extends Component {
   render() {
     return (
-      <Navigator navigation={addNavigationHelpers({
+      <RootNavigator navigation={addNavigationHelpers({
         dispatch: this.props.dispatch,
         state: this.props.nav
       })} />

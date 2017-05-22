@@ -9,5 +9,8 @@
     "**/node_modules": true,
     "android": true,
     "ios": true
+  },
+  "workbench.colorCustomizations": {
+    "editor.selectionBackground": "#c1b5a1"
   }
 }

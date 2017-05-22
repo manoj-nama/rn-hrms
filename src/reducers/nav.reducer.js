@@ -1,11 +1,11 @@
-import { Navigator, NavConfig } from '../navigation';
+import { RootNavigator, NavConfig } from '../navigation';
 
-const initialState = Navigator.router.getStateForAction(
-  Navigator.router.getActionForPathAndParams('Home')
+const initialState = RootNavigator.router.getStateForAction(
+  RootNavigator.router.getActionForPathAndParams('Login')
 );
 
 const navReducer = (state = initialState, action) => {
-  const nextState = Navigator.router.getStateForAction(action, state);
+  const nextState = RootNavigator.router.getStateForAction(action, state);
   return nextState || state;
 };
 
