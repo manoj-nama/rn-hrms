@@ -7,11 +7,11 @@ import {
 
 import Icon from 'react-native-vector-icons/Ionicons';
 
-export default class Home extends Component {
+export default class Approval extends Component {
   static navigationOptions = {
-    tabBarLabel: 'Attendance',
+    tabBarLabel: 'Approve',
     tabBarIcon: ({focused}) => {
-      const iconName = focused ? 'ios-calendar' : 'ios-calendar-outline';
+      const iconName = focused ? 'ios-checkmark-circle' : 'ios-checkmark-circle-outline';
       return <Icon name={iconName} size={24} />
     }
   }
@@ -19,7 +19,7 @@ export default class Home extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Check your attendance status</Text>
+        <Text>Check your approval status</Text>
       </View>
     );
   }

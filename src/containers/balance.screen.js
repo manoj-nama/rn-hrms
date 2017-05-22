@@ -7,11 +7,11 @@ import {
 
 import Icon from 'react-native-vector-icons/Ionicons';
 
-export default class Home extends Component {
+export default class Balance extends Component {
   static navigationOptions = {
-    tabBarLabel: 'Attendance',
+    tabBarLabel: 'Balances',
     tabBarIcon: ({focused}) => {
-      const iconName = focused ? 'ios-calendar' : 'ios-calendar-outline';
+      const iconName = focused ? 'ios-paper' : 'ios-paper-outline';
       return <Icon name={iconName} size={24} />
     }
   }
@@ -19,7 +19,7 @@ export default class Home extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Check your attendance status</Text>
+        <Text>Balance Screen</Text>
       </View>
     );
   }
